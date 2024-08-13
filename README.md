@@ -1,11 +1,11 @@
 # ProgI-2024-2C-TN-Virtual
 
-Repositorio creado para compartir, semana a semana, lo trabajado en las clases de la materia Programaci I comisin virtual, de la Universidad Tecnologica Nacional, Facultad Regional General Pacheco.
+Repositorio creado para compartir, semana a semana, lo trabajado en las clases de la materia Programaci贸n I comisi贸n virtual, de la Universidad Tecnol贸gica Nacional, Facultad Regional General Pacheco.
 
 ## Code::Blocks
-### Instalaci
-1. Descargar el instalador de la p爂ina oficial: [Code::Blocks](http://www.codeblocks.org/downloads/26)
+### Instalaci贸n
+1. Descargar el instalador de la p谩gina oficial: [Code::Blocks](http://www.codeblocks.org/downloads/26)
 2. Ejecutar el instalador
 3. Seleccionar los componentes a instalar
-4. Seleccionar la carpeta de instalaci
-5. Finalizar la instalaci
+4. Seleccionar la carpeta de instalaci贸n
+5. Finalizar la instalaci贸n
