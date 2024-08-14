@@ -49,5 +49,9 @@ int main()
 }
 */
 
+//EJEMPLO DE CASTEO:
+//porcentajeDeAsientoOcupados = (float)asientosOcupados*100/asientosTotales;
+//porcentajeDeAsientoOcupados = asientosOcupados*100.0/asientosTotales;
+
 
 
