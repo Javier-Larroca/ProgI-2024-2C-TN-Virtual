@@ -20,7 +20,7 @@ using namespace std;
 int main()
 {
     int num, numAnt, mayor;
-    bool bandera;
+    bool banderaIngresoPrimerMayor=false;
 
     cout<<"Ingrese un numero: ";
     cin>>num;
@@ -30,10 +30,20 @@ int main()
     while(num!=numAnt)
     {
         numAnt = num;
-        if(num>mayor)
+        /*if(!banderaIngresoPrimerMayor)
         {
             mayor=num;
+            banderaIngresoPrimerMayor = true;
         }
+        else
+        {
+        */
+            if(!banderaIngresoPrimerMayor || num>mayor)
+            {
+                banderaIngresoPrimerMayor = true;
+                mayor=num;
+            }
+        //}
         cout<<"Ingrese un numero: ";
         cin>>num;
     }
