@@ -1,3 +1,5 @@
+//Codigo compartido por compañera en clase para buscar el porque no funcionaba.
+
 #include <iostream>
 using namespace std;
 
