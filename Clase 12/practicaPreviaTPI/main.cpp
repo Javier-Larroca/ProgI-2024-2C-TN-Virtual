@@ -1,7 +1,7 @@
 #include <iostream>
 #include <cstdlib>
 #include <ctime>
-#include "funciones.h"
+//#include "funciones.h"
 
 using namespace std;
 
@@ -9,7 +9,7 @@ int encontrarElNumero(); //Función que se ocupara de que el usuario acierte el n
 void mostrarIntentos(int intentos[]); //Función que nos indicara el puntaje de cada jugador.
 void anunciarGanador(int intentos[], string nombres[]); //Función que anuncia cual fue el jugador ganador.
 void cargarNombres(string nombres[]); //Función que se ocupara de solicitar los nombres a ambos jugadores.
-void dibujarPresentacion();
+void dibujarPresentacion(); //Función que nos dibujara la presentación del juego.
 
 int main()
 {
@@ -20,6 +20,8 @@ int main()
     string nombresDeJugadores[2]; //Vector donde se guardaran los nombres de los jugadores.
 
     dibujarPresentacion();
+
+    cout<<endl<<"      ¡Bienvenidos al juegos!"<<endl<<endl;
 
     cargarNombres(nombresDeJugadores);
 
@@ -38,6 +40,7 @@ int main()
 
     mostrarIntentos(intentosPorjugador); //Llamo a la función de mostrar intentos para que nos muestre los intentos de cada jugador.
 
+    dibujarPresentacion();
     anunciarGanador(intentosPorjugador, nombresDeJugadores); //Llamo a la función que anunciara cual es el jugador ganador.
 
     return 0;
@@ -53,7 +56,6 @@ void dibujarPresentacion()
 
 void cargarNombres(string nombres[])
 {
-    cout<<"---------------------------------------------"<<endl;
     char confirmar='n';
     while(toupper(confirmar)!='S')
     {
@@ -66,8 +68,6 @@ void cargarNombres(string nombres[])
         cout<<endl<<"Desea confirmar los nombres ingresados (S/N): ";
         cin>>confirmar;
     }
-
-    cout<<"---------------------------------------------"<<endl;
 }
 
 
@@ -122,11 +122,11 @@ void anunciarGanador(int intentos[], string nombres[])
     {
         if(intentos[0]<intentos[1]) //Evaluo cual de los dos jugadores fue el ganador.
         {
-            cout<<endl<<"     ¡¡"<<nombres[0]<<" fue el ganador !!"<<endl;
+            cout<<endl<<"     ¡¡ "<<nombres[0]<<" fue el ganador !!"<<endl;
         }
         else
         {
-            cout<<endl<<"     ¡¡"<<nombres[1]<<" fue el ganador !!"<<endl;
+            cout<<endl<<"     ¡¡ "<<nombres[1]<<" fue el ganador !!"<<endl;
         }
     }
 }
