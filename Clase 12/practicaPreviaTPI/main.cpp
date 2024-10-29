@@ -21,7 +21,7 @@ int main()
 
     dibujarPresentacion();
 
-    cout<<endl<<"      ¡Bienvenidos al juegos!"<<endl<<endl;
+    cout<<endl<<"      ¡Bienvenidos al juego!"<<endl<<endl;
 
     cargarNombres(nombresDeJugadores);
 
